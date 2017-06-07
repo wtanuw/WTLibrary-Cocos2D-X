@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'WTLibrary-Cocos2D-X_Example' do
+  pod 'WTLibrary-Cocos2D-X', :path => '../'
+
+  target 'WTLibrary-Cocos2D-X_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
